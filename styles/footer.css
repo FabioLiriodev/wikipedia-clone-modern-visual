@@ -1,0 +1,37 @@
+:root {
+    font-size: 16px;
+
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding-m) 0;
+    gap: var(--gap-l);
+    margin-left: var(--margin-l);
+}
+
+.footer-text,
+.footer-item {
+    font-size: var(--font-size-s);
+}
+
+.footer-link,
+.footer-text > a {
+    text-decoration: none;
+}
+
+.footer-text > a:hover,
+.footer-text > a:focus,
+.footer-link:hover,
+.footer-link:focus {
+    text-decoration: underline;
+    color: #3056a9;
+}
+
+
+.footer-list {
+    display: flex;
+    gap: var(--gap-b);
+}
+
+}

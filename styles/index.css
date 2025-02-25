@@ -89,9 +89,26 @@
         font-family: var(--font-text);
     }
 
+    .link:hover {
+    text-decoration: underline;
+    color: #3056a9;
+    }
+
+    .container {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .container-align {
+        display: flex;
+        gap: var(--gap-xl);
+        align-items:first baseline;
+    }
+
     .sidebar {
         background-color: #e6e6e6;
         padding: var(--padding-m);
+        height: 100vh;
     }
 
     .navlist {
@@ -116,7 +133,6 @@
     flex-direction: column;
     gap: var(--gap-b);
     padding: var(--padding-b);
-    margin-right: var(--margin-b);
 }
 
 .aspect-container {
@@ -128,6 +144,7 @@
 .btn-hide {
     font-size: var(--font-size-s);
     padding: 0.25rem var(--padding-xs);
+    cursor: pointer;
 }
 
 .text-class {
@@ -199,8 +216,7 @@
 }
 
 blockquote {
-    margin-top: 2rem;
-    margin-left: 2rem;
+    margin: 2rem 0 2rem 2rem;
     padding: 1rem;
     background-color: #f1f1f1;
     font-style: italic;
@@ -216,8 +232,9 @@ blockquote {
 
 .content-info {
     display: flex;
+    align-content: center;
     gap: var(--gap-xs);
-    align-items: center;
+    padding: var(--padding-xs);
     max-width: var(--max-width-block);
     margin: 0 auto;
 }
@@ -232,6 +249,12 @@ blockquote {
 .subtitle {
     align-items: center;
     margin-bottom: var(--margin-l);
+    padding-bottom: var(--padding-xs);
+    border-bottom: 1px solid gray;
+}
+
+figcaption {
+    padding: var(--padding-s) 0;
 }
 
 }
